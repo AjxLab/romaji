@@ -13,13 +13,12 @@ class Romaji
     data.each { |col|
       @romaji[col.shift.strip] = col.map {|s| s.strip}
     }
-    p @romaji
   end
 
 
   def to_romaji(str)
     ## -----*----- ローマ字に変換 -----*----- ##
-    str = str.strip
+    str = str.tr('ァ-ン', 'ぁ-ん',).strip
     key = []
     chars = str.chars
     bias = 0
