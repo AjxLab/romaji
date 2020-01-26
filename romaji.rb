@@ -46,7 +46,6 @@ class Romaji
     ## -----*----- ローマ字->カタカナ変換 -----*----- ##
     # ローマ字の連番配列を指定
     katakana = romaji.map { |c|
-      p c
       search = @romaji.find {|k,v| v.include? c }
       if search.nil?
         c
