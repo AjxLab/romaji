@@ -17,6 +17,7 @@ romaji = Romaji.new './romaji.csv'
 romaji.to_romaji 'コンニチハ'
 # => [["ko"], ["nn"], ["ni"], ["ti", "chi"], ["ha"]]
 
-romaji.to_katakana [["ko"], ["nn"], ["ni"], ["ti", "chi"], ["ha"]]
+oooooo
+romaji.to_katakana ["ko", "nn", "ni", "chi", "ha"]
 # => コンニチハ
 ```
