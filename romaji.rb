@@ -42,7 +42,7 @@ class Romaji
   end
 
 
-  def to_katakana(romaji, is_hiragana=false)
+  def to_katakana(romaji, hiragana:false)
     ## -----*----- ローマ字->カタカナ変換 -----*----- ##
     # ローマ字の連番配列を指定
     katakana = romaji.map.with_index { |c, i|
