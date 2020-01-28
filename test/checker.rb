@@ -15,4 +15,7 @@ text.map! do |arr|
   [*arr, romaji_arr]
 end
 
-p text
+text.each do |arr|
+  hiragana = romaji.to_katakana(arr[2], to_hiragana: true)
+  p hiragana
+end
