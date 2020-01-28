@@ -15,7 +15,18 @@ text.map! do |arr|
   [*arr, romaji_arr]
 end
 
+
+b_correct = true
 text.each do |arr|
   hiragana = romaji.to_katakana(arr[2], to_hiragana: true)
-  p hiragana
+
+  # 変換に失敗した場合
+  if hiragana != arr[1].strip
+    puts "失敗：「#{arr[1].strip}」 -- 「#{hiragana}」"
+    b_correct = false
+  end
+end
+
+if b_correct
+  puts "Successful passing all cases!"
 end
