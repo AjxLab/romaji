@@ -1,6 +1,8 @@
 romaji
 ======
 
+[![Build Status](https://api.travis-ci.org/AjxLab/romaji.svg?branch=master)](https://travis-ci.org/AjxLab/romaji)
+
 Utility to convert between katakana and romaji for Ruby.
 
 
