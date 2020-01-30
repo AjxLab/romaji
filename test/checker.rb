@@ -29,4 +29,6 @@ end
 
 if b_correct
   puts "Successful passing all cases!"
+else
+  raise "Did not pass.."
 end
